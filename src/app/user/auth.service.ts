@@ -17,14 +17,18 @@ import { User } from './user.model';
 
 //UserPoolId: us-east-2_TkdEHPmrZ
 //ClientId:uuadd04ru7fi7fie6ukb4cuuu
+//625jd5brl6604t9dq0bsb34vdg
+
+// https://0rn2tbhuaf.execute-api.us-east-2.amazonaws.com/dev
+//http://nu-datascience-bootcamp.s3-website.us-east-2.amazonaws.com/
 
 const POOL_DATA = {
-  UserPoolId: 'us-east-2_TkdEHPmrZ',
-  ClientId: '2tko3o0f7q16pl5oipagjpsva1'
+  UserPoolId: 'us-east-2_1ygprTG66', //us-east-2_1ygprTG66
+  ClientId: '7ohl7r1g0nl2mmp3rr1igjk4ce' //625jd5brl6604t9dq0bsb34vdg  7ohl7r1g0nl2mmp3rr1igjk4ce
 
   //2tko3o0f7q16pl5oipagjpsva1
   // UserPoolId: 'POOL_ID',
-  // ClientId: 'APP_CLIENT_ID'
+  // ClientId: 'APP_CLIENT_ID'  arn:aws:cognito-idp:us-east-2:123779530835:userpool/us-east-2_1ygprTG66
 };
 const userPool = new CognitoUserPool(POOL_DATA);
 

@@ -2,9 +2,9 @@
   "swagger": "2.0",
   "info": {
     "version": "2017-06-06T09:59:18Z",
-    "title": "bax-renalcare-disposable-api5"
+    "title": "nu-datascience-project3"
   },
-  "host": "lsmwo2wikj.execute-api.us-east-2.amazonaws.com",
+  "host": "21mc36v931.execute-api.us-east-2.amazonaws.com",
   "basePath": "/dev",
   "schemes": [
     "https"
@@ -59,7 +59,7 @@
           "requestTemplates": {
             "application/json": "#set($inputRoot = $input.path('$'))\n{\n  \"age\" : \"$inputRoot.age\",\n  \"height\": \"$inputRoot.height\",\n  \"income\": \"$inputRoot.income\",\n  \"userId\": \"$context.authorizer.claims.sub\"\n}"
           },
-          "uri": "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:178375044839:function:bax-renalcare-disposables-api-post2/invocations",
+          "uri": "arn:aws:apigateway:us-east-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-2:123779530835:function:nu-datascience-project3/invocations",
           "passthroughBehavior": "when_no_templates",
           "httpMethod": "POST",
           "contentHandling": "CONVERT_TO_TEXT",
@@ -120,7 +120,7 @@
       "x-amazon-apigateway-authtype": "cognito_user_pools",
       "x-amazon-apigateway-authorizer": {
         "providerARNs": [
-          "arn:aws:cognito-idp:us-east-2:178375044839:userpool/us-east-2_TkdEHPmrZ"
+          "arn:aws:cognito-idp:us-east-2:123779530835:userpool/us-east-2_1ygprTG66"
         ],
         "type": "cognito_user_pools"
       }

@@ -32,7 +32,8 @@ export class CompareService {
       headers.append('Content-Type', 'application/json');
       headers.append('Authorization', session.getIdToken().getJwtToken());
       
-      this.http.post('https://lsmwo2wikj.execute-api.us-east-2.amazonaws.com/dev/api/', data, {
+      this.http.post('https://0rn2tbhuaf.execute-api.us-east-2.amazonaws.com/dev/api/', data, {
+        //https://0rn2tbhuaf.execute-api.us-east-2.amazonaws.com/dev/
       //this.http.post('https://6gyxwl591h.execute-api.us-east-2.amazonaws.com/dev/api/', data, {
         headers: new Headers({ 'Authorization': session.getIdToken().getJwtToken() })
       })
