@@ -12,6 +12,28 @@ import { AuthService } from './user/auth.service';
 import { CompareService } from './compare/compare.service';
 import { CompareInputComponent } from './compare/compare-input/compare-input.component';
 import { CompareResultsComponent } from './compare/compare-results/compare-results.component';
+import { FileSizePipe } from '../utils';
+
+// import {
+//   AuthService,
+//   FirstTimePasswordComponent,
+//   ForgotPasswordComponent,
+//   ResetPasswordComponent,
+//   SigninComponent,
+//   SignoutComponent
+// } from './auth';
+// import {
+//   HomeComponent
+// } from './home';
+import { S3 } from 'aws-sdk';
+import { DownloadComponent, DownLoadService } from './download';
+import { LoadingComponent } from './loading/component';
+import {
+  UploadContainerComponent,
+  FileUploadComponent,
+  UploadService
+} from './upload';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +42,8 @@ import { CompareResultsComponent } from './compare/compare-results/compare-resul
     SigninComponent,
     CompareComponent,
     CompareInputComponent,
-    CompareResultsComponent
+    CompareResultsComponent,
+    FileSizePipe 
   ],
   imports: [
     BrowserModule,
@@ -28,7 +51,12 @@ import { CompareResultsComponent } from './compare/compare-results/compare-resul
     HttpModule,
     AppRoutingModule
   ],
-  providers: [AuthService, CompareService],
+  providers: [
+    AuthService,
+     CompareService,
+     DownLoadService,
+     UploadService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
