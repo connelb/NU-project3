@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, Response } from '@angular/http';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { Subject } from 'rxjs/Subject';
-import 'rxjs/add/operator/map';
+import { BehaviorSubject } from 'rxjs';
+import { Subject} from 'rxjs';
+import { map } from 'rxjs/operators';
+// import 'rxjs/add/operator/map';
 
 import { CompareData } from './compare-data.model';
-import { AuthService } from '../user/auth.service';
+import { AuthService } from '../../fw/auth/service';
 
 @Injectable()
 export class CompareService {

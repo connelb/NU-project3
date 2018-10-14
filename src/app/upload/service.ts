@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
-import { User } from '../auth/types';
+import { User } from '../../fw/auth/types';
 import { ContainerEvents, FileObject } from './types';
 import { S3 } from 'aws-sdk';
 import { S3Factory } from '../../utils';
@@ -22,7 +22,7 @@ export class UploadService {
   private defaultRegion: string;
 
   constructor() {
-    this.defaultRegion = 'ap-south-1';
+    this.defaultRegion = 'us-east-2';
   }
 
   setSignedInUser(user: User) {

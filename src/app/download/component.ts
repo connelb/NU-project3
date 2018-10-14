@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DownLoadService } from './service';
-import { AuthService, User } from '../auth';
+import { AuthService, User } from '../../fw/auth';
 import {S3} from 'aws-sdk'
 import { FileSizeUtil, MonthUtil } from '../../utils'
 @Component({

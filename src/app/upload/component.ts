@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UploadService } from './service';
 import { ContainerEvents, FileObject, FileObjectStatus } from './types';
-import { AuthService, User } from '../auth';
+//import { AuthService, User } from '../auth';
+import { AuthService, User } from '../../fw/auth';
 import { URLUtil } from '../../utils';
 
 /**

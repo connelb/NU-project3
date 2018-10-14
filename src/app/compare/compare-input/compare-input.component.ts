@@ -3,6 +3,8 @@ import { CompareData } from '../compare-data.model';
 import { NgForm } from '@angular/forms';
 
 import { CompareService } from '../compare.service';
+import { UploadContainerComponent } from '../../upload';
+import { FileUploadComponent } from '../../upload';
 
 @Component({
   selector: 'app-compare-input',
@@ -14,7 +16,7 @@ export class CompareInputComponent implements OnInit {
   isLoading = false;
   couldNotLoadData = false;
 
-  constructor(private compareService: CompareService) {
+  constructor(private compareService: CompareService, private uploadContainer:UploadContainerComponent) {
   }
 
   ngOnInit() {
@@ -41,4 +43,10 @@ export class CompareInputComponent implements OnInit {
   onFetchStoredData() {
     this.compareService.onRetrieveData(false);
   }
+
+  uploadFile(){
+    //this.uploadContainer.upload() 
+  }
+
+
 }

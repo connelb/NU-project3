@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { User } from '../auth/types';
+import { User } from '../../fw/auth/types';
 import { S3Factory } from '../../utils';
 import { s3Config } from '../../config';
 
@@ -12,7 +12,7 @@ export class DownLoadService {
 
 
   constructor() {
-    this.defaultRegion = 'ap-south-1';
+    this.defaultRegion = 'us-east-2';
   }
 
   setSignedInUser(user: User) {
